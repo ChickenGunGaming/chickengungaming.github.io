@@ -1,0 +1,302 @@
+
+* { 
+    box-sizing: border-box;}
+
+body {
+    background-color:#e5e5e5;
+    color:#141e55;
+    font-family: Verdana;
+    margin: 0;
+    max-width: 1920px;
+    padding-bottom: 48px;}
+
+main {
+    padding: 0em 1em 0em 1em}
+
+nav {
+    font-size: 1.2em;
+    background-color: red;
+    min-height: 42px;}
+
+    nav a {
+        text-decoration: none;}
+
+        nav a:link {
+            color: white;}
+
+        nav a:visited {
+            color: white;}
+
+        nav a:hover {
+            color: yellow;}
+
+    nav ul {
+        margin: 0;
+        padding-left: 0;}
+
+    nav li {
+        list-style: none;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-bottom: 1px solid #e5e5e5;}
+
+header {
+    background-color: rgb(0 0 0/70%);
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    color:#FFFFFF;
+    font-family: sans-serif;
+    padding-left: .05em;
+    padding-right: .05em;
+    font-size: 3em;
+    position: relative;}
+
+h1 {
+    color: #1935d2;
+    font-family: sans-serif;}
+
+h2 {
+    color: #1935d2;
+    font-family: sans-serif;}
+
+h3 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5em;}
+
+p{ 
+    font-weight: bold;}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em; width: 80%;}
+
+input {
+    margin-bottom: 0.5em;}
+
+section {
+    width: 100%;
+    padding-bottom: 30px;}
+
+#home-grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, 100%);}
+    
+#team-grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, 100%);}
+
+iframe {
+    display: none;
+    border: 0;}
+
+dl {
+    margin: auto;
+    padding-bottom: 50px;}
+
+footer {
+    font-size: 0.70em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    background-color: orange;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    max-width: 1920px;}
+
+.project-img {
+    width: 100%;}
+
+#wrapper {
+    background-color:#FFFFFF;
+    padding: 10px;}
+
+#homehero, #teamhero, #downloadshero, #devhero, #hallwayhero, #orkhero, #ironhero {
+    background-size: cover;
+    background-position: center 0;
+    height: 200px;}
+
+#homehero {
+    background-image: url(Images/hallwayfightbanner.png);}
+
+#teamhero {
+    background-image: url(Images/TeamSkills.png);}
+
+#downloadshero {
+    background-image: url(Images/WaveForm.PNG);}
+
+#devhero {
+    background-image: url(Images/PixelJamBanner.PNG);}
+
+#hallwayhero {
+    background-image: url(Images/hallwayfightbanner.png);}
+
+#orkhero {
+    background-image: url(Images/OrkMoshbanner.png);}
+
+#ironhero {
+    background-image: url(Images/IRONCURSEbanner.png);}
+
+#logoimg {
+    content: url(Images/Chicken_Gun_Banner.gif);
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    width: 60px;}
+
+.button-checkbox {
+    display: none;}
+
+#menu-bar {
+    text-align: center;
+    display: none;}
+
+#check:checked ~ #menu-bar {
+    display: block;}
+
+#check:checked ~ #navigation {
+        display: none;}
+
+.menu-item {
+    user-select: none;
+    -moz-user-select: none;}
+
+#menu-label {
+    color: white;
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 4px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    right: 0;}
+
+#navigation {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    color: white;
+    text-align: center;}
+
+.asset-art {
+    height: 10em;}
+
+.hyperlink-wrap { 
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;}
+
+audio {
+    max-width: 75vw;}
+
+@media (min-width: 600px) {
+
+    header {
+        letter-spacing: .1em;
+        padding-left: .1em;
+        padding-right: .1em;
+        font-size: 3.8em;}
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-right: 2em;}
+
+    nav li {
+        width: 12em;
+        border-bottom: none;}
+
+    section {
+        padding-left: 20px;
+        padding-right: 20px;}
+
+    form {
+        width: 100%;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 10em 1fr;}
+
+    button[type="submit"] {
+        grid-column: 2;
+        width: 9em;}
+
+    iframe {
+        display: block;
+        margin-left: 0;}
+
+    #wrapper {
+        margin: auto;
+        width: 90%;}
+
+    #menu-bar {
+        display: block;}
+
+    #navigation {
+        display: none;}
+    
+    #logoimg{
+        top: 37%;
+        width: 85px;}
+
+    #hallway-fight-iframe {
+        margin: auto;
+        height: 562px;
+        width: 500px;}
+
+    #ork-mosh-iframe {
+        margin: auto;
+        height: 738px;
+        width: 500px;}
+
+    #homehero, #teamhero, #downloadshero, #devhero, #hallwayhero, #orkhero, #ironhero {
+        height: 300px;}
+
+    #menu-label {
+        display: none;}
+    
+    #home-grid {
+        grid-template-columns: repeat(auto-fit, 50%);}
+        
+    .asset-art {
+        height: 20em;}
+
+    #unity-link{
+        display: none;}
+    
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: auto;}
+
+    nav ul {
+        padding-left: 10%;
+        padding-right: 10%;}
+
+    form {
+        width: 60%;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 10em 1fr;}
+
+    #wrapper {
+        width: 80%;}
+
+    #home-grid {
+        grid-template-columns: repeat(auto-fit, 25%);}
+
+    .asset-art {
+        height: 30em;}
+}
