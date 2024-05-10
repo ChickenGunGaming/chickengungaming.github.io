@@ -65,6 +65,25 @@ h3 {
     text-align: center;
     font-size: 1.5em;}
 
+table {
+    margin: auto;
+    border: 1px solid #3399CC;
+    width : 90%;
+    border-collapse: collapse;}
+
+tr:nth-of-type(even){
+    background-color: #DFEDF8;}
+
+td {
+    padding: 5px;
+    border: 1px solid #3399CC;
+    margin: auto;
+    text-align: center;}
+
+th {
+    padding: 5px;
+    border: 1px solid #3399CC;}
+
 p{ 
     font-weight: bold;}
 
@@ -94,10 +113,6 @@ iframe {
     display: none;
     border: 0;}
 
-dl {
-    margin: auto;
-    padding-bottom: 50px;}
-
 footer {
     font-size: 0.70em;
     font-style: italic;
@@ -109,6 +124,9 @@ footer {
     bottom: 0;
     width: 100vw;
     max-width: 1920px;}
+
+.text {
+    text-align: left;}
 
 .project-img {
     width: 100%;}
